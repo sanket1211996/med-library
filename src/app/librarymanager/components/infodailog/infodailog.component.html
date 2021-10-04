@@ -1,0 +1,11 @@
+<h1 *ngIf="term === undefined">DATA NOT FOUND</h1>
+<div *ngIf="term !== undefined">
+    <h2 mat-dialog-title>{{term.label}}</h2>
+    <mat-dialog-content>
+        <h3>Defination:</h3> {{term.defination}} <br>
+        <h3>Link: </h3>{{term.link}}
+    </mat-dialog-content>
+    <mat-dialog-actions>
+    <button mat-button mat-dialog-close>Cancel</button>
+    </mat-dialog-actions>
+</div>
