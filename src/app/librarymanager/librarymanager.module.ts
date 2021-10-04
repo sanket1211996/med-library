@@ -7,6 +7,7 @@ import { SidenavComponent } from './components/sidenav/sidenav.component';
 import { MaterialModule } from '../shared/material.module';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule, Routes } from '@angular/router';
+import { LibraryService } from './services/library.service';
 
 const routes: Routes = [
   {path:'', component: LibrarymanagerAppComponent,
@@ -31,6 +32,9 @@ const routes: Routes = [
     FlexLayoutModule,
     //For other module we have to use forChild()
     RouterModule.forChild(routes)
+  ],
+  providers:[
+    LibraryService //Added the required service
   ]
 })
 export class LibrarymanagerModule { }
