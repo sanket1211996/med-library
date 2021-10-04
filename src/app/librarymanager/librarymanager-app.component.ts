@@ -3,9 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-librarymanager-app',
   template: `
-    <p>
-      librarymanager-app works!
-    </p>
+    <app-sidenav></app-sidenav>
   `,
   styles: [
   ]
